@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 1000054600}
   - component: {fileID: 1000054599}
   - component: {fileID: 1000054603}
+  - component: {fileID: 1000054604}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -243,7 +244,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1000054598}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -324,12 +325,24 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f3682949d0fcbbd44bdf31a308aeb433, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1000054604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000054598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20eac8068c113c45941589a10c70fe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRunSpeed: 10
 --- !u!1 &1336957907
 GameObject:
   m_ObjectHideFlags: 0
