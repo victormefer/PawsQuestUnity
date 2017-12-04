@@ -15,6 +15,11 @@ public class PlayerControl : MonoBehaviour {
 		rigidBody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 	}
+
+	void Update () {
+
+		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
